@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vanilla-rag",
+  "main": "src/worker.js",
+  "compatibility_date": "2024-11-01",
+  "ai": { "binding": "AI" },
+  "vars": { "LLM_MODEL": "openai/gpt-oss-120b" },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "vanilla-rag-db", "database_id": "d6338c09-2055-4653-bfb0-c359cae562ab" }
+  ]
+}
